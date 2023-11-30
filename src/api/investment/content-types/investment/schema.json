@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investments",
+  "info": {
+    "singularName": "investment",
+    "pluralName": "investments",
+    "displayName": "investment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "owner": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "market_value": {
+      "type": "decimal"
+    },
+    "promotion": {
+      "type": "string"
+    },
+    "square_meters": {
+      "type": "integer"
+    },
+    "contributed_capital": {
+      "type": "decimal"
+    },
+    "surplus_value_generated": {
+      "type": "decimal"
+    },
+    "outstanding_capital": {
+      "type": "decimal"
+    },
+    "orientation": {
+      "type": "string"
+    },
+    "promotion_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::promotion.promotion"
+    },
+    "precontract": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "reservation_invoice": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sale_invoice": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contract": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "loan_contract": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "property_registration": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

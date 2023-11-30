@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rents",
+  "info": {
+    "singularName": "rent",
+    "pluralName": "rents",
+    "displayName": "rent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "owner": {
+      "type": "string"
+    },
+    "rent_price": {
+      "type": "decimal"
+    },
+    "promotion": {
+      "type": "string"
+    },
+    "square_meters": {
+      "type": "integer"
+    },
+    "estimated_annual_return": {
+      "type": "decimal"
+    },
+    "amortization_time": {
+      "type": "decimal"
+    },
+    "promotion_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::promotion.promotion"
+    },
+    "purchase_date": {
+      "type": "date"
+    },
+    "start_of_management": {
+      "type": "date"
+    },
+    "rent_type": {
+      "type": "enumeration",
+      "enum": [
+        "Anual",
+        "Diario",
+        "Mensual"
+      ]
+    },
+    "disponibility": {
+      "type": "component",
+      "repeatable": false,
+      "component": "disponibility.value-disponibility"
+    },
+    "contract": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

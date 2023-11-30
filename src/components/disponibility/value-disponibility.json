@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_disponibility_value_disponibilities",
+  "info": {
+    "displayName": "value_disponibility",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "complete": {
+      "type": "boolean",
+      "default": true
+    },
+    "disponibility_dates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "disponibility.disponibility"
+    }
+  }
+}

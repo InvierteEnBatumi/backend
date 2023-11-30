@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_disponibility_disponibilities",
+  "info": {
+    "displayName": "disponibility_dates",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    }
+  }
+}

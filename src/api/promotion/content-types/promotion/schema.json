@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotions",
+  "info": {
+    "singularName": "promotion",
+    "pluralName": "promotions",
+    "displayName": "promotions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Renta",
+        "Inversion",
+        "Venta"
+      ]
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "features.feature"
+    },
+    "clients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "progress": {
+      "type": "enumeration",
+      "enum": [
+        "Cimentación",
+        "Construcción",
+        "BlackFrame",
+        "WhiteFrame",
+        "Amueblado",
+        "Finalización"
+      ]
+    },
+    "camera_url": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "in_sale": {
+      "type": "boolean",
+      "default": false
+    },
+    "main_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "rent_price": {
+      "type": "integer"
+    },
+    "files": {
+      "type": "component",
+      "repeatable": true,
+      "component": "files.files"
+    },
+    "revalorization": {
+      "type": "component",
+      "repeatable": true,
+      "component": "revalorization.revalorization"
+    }
+  }
+}

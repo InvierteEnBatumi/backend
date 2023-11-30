@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_revalorization_revalorizations",
+  "info": {
+    "displayName": "revalorization",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "decimal"
+    },
+    "year": {
+      "type": "integer"
+    }
+  }
+}

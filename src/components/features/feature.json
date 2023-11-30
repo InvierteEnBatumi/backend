@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_features_features",
+  "info": {
+    "displayName": "feature",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}
