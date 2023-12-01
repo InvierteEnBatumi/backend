@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: 'dpg-clkrmncjtl8s73f17epg-a.oregon-postgres.render.com/batumidb',
+      host: 'dpg-clkrmncjtl8s73f17epg-a',
       port: '5432',
       database: 'batumidb',
       user: 'batumiuser',
