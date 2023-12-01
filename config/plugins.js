@@ -24,5 +24,12 @@ module.exports = ({
         removeDataKey: true,
       }
     }
-  }
+  },
+  'strapi-plugin-populate-deep': {
+    config: { 
+      defaultDepth: 4, // Default is 5
+    }
+  },
+
+
 });

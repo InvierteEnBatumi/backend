@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "settings"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comission_level_3": {
+      "type": "decimal"
+    },
+    "comission_level_2": {
+      "type": "decimal"
+    },
+    "comission_level_1": {
+      "type": "decimal"
+    }
+  }
+}
